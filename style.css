@@ -605,3 +605,8 @@ ul{
         transform: scale(1);
     }
 }
+
+
+.Speaker-card p{
+    margin-top: -12px;
+}
