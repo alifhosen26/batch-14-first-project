@@ -315,6 +315,13 @@ button {
     gap: 20px;
 }
 
+
+.cart day{
+        display: flex;
+    flex-direction: column;
+    height: 550px;
+}
+
 .cart {
     width: 320px;
     padding: 30px;
@@ -370,6 +377,7 @@ ul{
     cursor: pointer;
 }
 
+
 .cart button:hover{
     background: #000000;
     color: white;
@@ -378,13 +386,6 @@ ul{
 .title{
     text-align: center;
     margin-bottom: 50px;
-}
-
-.dm{
-    text-align: center;
-    /* height: 200px; */
-    width: 200px;
-    
 }
 
 /* .cart{
@@ -438,4 +439,153 @@ ul{
 .as-links{
     display: flex;
     gap:20px;
+}
+
+.title p{
+    color: grey;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+.innovation-section{
+    padding: 100px 8%;
+    background: #f8fafc;
+    text-align: center;
+}
+
+/* Title */
+
+.innovation-title h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.innovation-title p{
+    width: 60%;
+    margin: auto;
+    color: #64748b;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+/* Stats */
+
+.stats-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.stat-card{
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,.08);
+}
+
+.stat-card h2{
+    color: #2563eb;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.stat-card p{
+    color: #64748b;
+}
+
+/* Cards */
+
+.innovation-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.innovation-card{
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,.08);
+    transition: .4s;
+}
+
+.innovation-card:hover{
+    transform: translateY(-10px);
+}
+
+.icon{
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.innovation-card h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.innovation-card p{
+    color: #64748b;
+    line-height: 1.8;
+}
+
+/* Middle Card */
+
+.featured{
+    background: #2563eb;
+    color: white;
+    transform: scale(1.05);
+}
+
+.featured p{
+    color: white;
+}
+
+.featured h3{
+    color: white;
+}
+
+/* Button */
+
+.innovation-btn{
+    display: block;
+    margin: 70px auto 0;
+   padding: 10px 35px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.innovation-btn:hover{
+    background: #1d4ed8;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .stats-container,
+    .innovation-cards{
+        grid-template-columns: 1fr;
+    }
+
+    .innovation-title h1{
+        font-size: 35px;
+    }
+
+    .innovation-title p{
+        width: 100%;
+    }
+
+    .featured{
+        transform: scale(1);
+    }
 }
